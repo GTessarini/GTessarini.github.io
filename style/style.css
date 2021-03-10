@@ -11,7 +11,7 @@ html{
     vertical-align: baseline;
 }
 body{
-    margin: 0 auto; 
+    margin: 0; 
     font-family: Arial;
     overflow-x: hidden;
 }
@@ -28,13 +28,14 @@ section{
     position: initial !important;
     word-wrap: break-word;
     text-align: start;
-    min-height: 100%;
 }
 
 section .section-content{
-    width: 99%;
     margin: 0 auto;
     margin-bottom: 15px;
+    max-width: 1000px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .background-color-white{
     background-color: #FFFFFF;
@@ -114,6 +115,9 @@ div[class*="col-"] {
     div[class*="col-"] {
         width: 100% !important;
     }    
+    div[class*="col-"]:not(:first-child) {
+        margin-top: 20px;
+    }
 }
 
 .fixed{
@@ -138,6 +142,12 @@ div[class*="col-"] {
     box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.63); 
 }
 
+.card:hover h2{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
 img.livro{
     height: 200px;
 }
@@ -145,6 +155,10 @@ img.livro{
 img.logo{
     width: 200px;
     height: 200px;
+}
+
+img.icon{
+    width: 40px;
 }
 
 
@@ -158,16 +172,23 @@ a:link, a:visited, a:focus, a:active{
 }
 
 a img.livro:hover{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    transform:scale(1.05);
     box-shadow: 0 8px 16px 0 rgba(112, 112, 112, 0.63); 
 }
 
-a img.logo:hover{
+a img.logo:hover, a img.icon:hover{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    transform:scale(1.05);
     -webkit-filter: drop-shadow(5px 5px 5px rgba(112, 112, 112, 0.63) );
     filter: drop-shadow(5px 5px 5px rgba(112, 112, 112, 0.63));
 }
 
 .section-portfolio{
-    min-height: 100%;
+    min-height: 100vh;
+    overflow-y: hidden;
 }
 
 .section-portfolio h1{
@@ -194,4 +215,34 @@ a img.logo:hover{
 
 .sinopse-container p{
     text-align: left;
+}
+
+.btn-ler-sinopse{
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 5px 20px;
+    color: #000;
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.btn-ler-sinopse:hover{
+    color: #00A0C6;
+    padding: 5px 30px;
+    transition: 0.5s;
+}
+
+.btn-ler-sinopse:active{
+    background-color: #00A0C6;
+    color: white;
+    outline: none;
+}
+
+.btn-ler-sinopse:focus-within{
+    border-width: 4px;
+    background-color: #00A0C6;
+    color: white;
+    outline: none;
+    transition: 0.4s;
 }
