@@ -20,9 +20,11 @@ $(document).ready(function(){
             const sinopseContainer = document.querySelector(`div.sinopse-container[data-value="${sinopse}"]`);
             if(sinopseContainer.classList.contains("hidden")){
                 sinopseContainer.classList.remove("hidden");
+                btnSinopse.textContent = "Ocultar sinopse";
             }else{
                 sinopseContainer.classList.add("hidden");
-            }
+                btnSinopse.textContent = "Ler sinopse";
+            }            
         });
     });
 });
