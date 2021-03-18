@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-    const cards = document.querySelectorAll(".card");    
+    const cards = document.querySelectorAll(".card-link");    
     cards.forEach(function(card){
        card.addEventListener("click", function(event){
             event.preventDefault();

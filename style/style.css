@@ -157,7 +157,11 @@ div[class*="col-"] {
     clear: both;
 }
 
-.card {
+a.card-link{
+    font-size: unset;
+}
+
+.card{
     box-shadow: 0 2px 4px 0 rgb(90 90 90 / 40%);
     background-color: #fff;
     border-radius: 5px;
@@ -167,7 +171,7 @@ div[class*="col-"] {
     cursor: pointer;
 }
 
-.card:hover {
+.card:hover, .card-link:focus .card{
     box-shadow: 0 4px 16px 0 rgba(112, 112, 112, 0.63); 
 }
 
@@ -188,6 +192,8 @@ img.logo{
 
 img.icon{
     width: 40px;
+    -webkit-filter: drop-shadow(4px 3px 3px rgba(112, 112, 112, 0.33));
+    filter: drop-shadow(4px 3px 3px rgba(112, 112, 112, 0.33));
 }
 
 footer{
