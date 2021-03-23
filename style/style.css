@@ -90,13 +90,16 @@ section .section-content{
 }
 
 .bio .contatos-gabriel-tessarini a{
-    margin: 0px 10px 0px 10px;
+    margin: 0px 15px 0px 15px;
 }
 
 @media (min-width:320px) and (max-width: 1000px){
     .bio{
         padding-bottom: 20px;
-    }    
+    }   
+    .bio .contatos-gabriel-tessarini a{
+        margin: 0px 20px 0px 20px;
+    } 
 }
 
 @media screen and (max-width: 768px){
@@ -171,6 +174,12 @@ div[class*="col-"] {
     }
 }
 
+@media (min-width:320px) and (max-width: 1000px){
+    .row-portfolio div[class*="col-"]{
+        margin-bottom: 100px;
+    }
+}
+
 .fixed{
     position: fixed !important;
 }
@@ -188,7 +197,7 @@ a.card-link{
     background-color: #fff;
     border-radius: 5px;
     padding: 16px;
-    margin: 0 5px 25px 5px;
+    margin: 0 5px 35px 5px;
     text-align: center;
     cursor: pointer;
 }
@@ -228,6 +237,9 @@ footer{
     }
     img.icon{
         width: 75px;
+    }
+    img.livro{
+        height: 300px;
     }
 }
 
