@@ -222,9 +222,9 @@ img.logo{
 }
 
 img.icon{
-    width: 40px;
-    -webkit-filter: drop-shadow(4px 3px 3px rgba(112, 112, 112, 0.33));
-    filter: drop-shadow(4px 3px 3px rgba(112, 112, 112, 0.33));
+    width: 42px;
+    -webkit-filter: drop-shadow(5px 4px 4px rgba(112, 112, 112, 0.33));
+    filter: drop-shadow(5px 4px 4px rgba(112, 112, 112, 0.33));
 }
 
 footer{
