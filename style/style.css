@@ -137,6 +137,11 @@ div[class*="col-"] {
     padding: 0 15px;
 }
 
+.col-2{
+    margin: 0;
+    width: 16.66%;
+}
+
 .col-3{
     margin: 0;
     width: 25%;
