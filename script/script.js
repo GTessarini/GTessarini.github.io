@@ -27,6 +27,14 @@ $(document).ready(function(){
             }            
         });
     });
+    const btnVerArtigos = document.querySelector("#btn-ver-artigos");
+    btnVerArtigos.addEventListener("click", function(event){
+        event.preventDefault();
+        const artigosContainer = document.querySelector(`div.ver-artigos-container`);
+        artigosContainer.classList.remove("hidden");
+        btnVerArtigos.classList.add("hidden");    
+        document.querySelector(`.ver-artigos-titulo`).classList.remove("hidden");   
+    });
 });
 
 /* Gabriel Tessarini */
