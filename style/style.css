@@ -32,7 +32,7 @@ section{
 
 p, a, img{
     font-size: 18px;
-    line-height: 27px;
+    line-height: 28px;
     letter-spacing: normal;
     word-wrap: break-word;
     margin: 20px 0;       
@@ -68,10 +68,6 @@ section .section-content{
     background-color: #F9F9F9;
 }
 
-.row.bio{
-    margin-top: 0px;
-}
-
 .foto-perfil{
     height: 325px;
 }
@@ -105,6 +101,9 @@ section .section-content{
     .bio{
         padding-bottom: 20px;
     }   
+    .bio .contatos-gabriel-tessarini{
+        margin-top: 55px;
+    }
     .bio .contatos-gabriel-tessarini a{
         margin: 0px 20px 0px 20px;
     } 
@@ -238,8 +237,15 @@ img.livro{
 }
 
 img.logo{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+}
+
+@media (min-width:320px) and (max-width: 1000px){
+    img.logo{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 img.icon{
@@ -263,7 +269,16 @@ footer{
         height: 300px;
     }
     .section-portfolio#sobre p{
-          margin: 24px 0;  
+          margin: 26px 0;  
+    }
+    .section-menu p{
+        margin: 30px 0;  
+    }
+    p{
+        font-size: 27px;
+    }
+    h3{
+        font-size: 29px;
     }
 }
 
@@ -288,7 +303,7 @@ a img.livro:hover{
     box-shadow: 0 8px 16px 0 rgba(112, 112, 112, 0.63); 
 }
 
-a img.logo:hover, a img.icon:hover{
+a img.logo:hover, a img.icon:hover, a .img-artigo:hover{
     -webkit-transform:scale(1.05);
     -moz-transform:scale(1.05);
     transform:scale(1.05);
@@ -324,7 +339,7 @@ h1{
     transition-duration: 0s, 0.7s;
 }
 
-.sinopse-container.hidden p{
+.sinopse-container.hidden p, .ver-artigos-container.hidden *, #btn-ver-artigos.hidden, .ver-artigos-titulo.hidden{
     opacity: 0;
     visibility: hidden;
     height: 0;
@@ -372,5 +387,63 @@ h1{
     outline: none;
     transition: 0.4s;
 }
+
+#btn-ver-artigos{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border-color: rgb(136 134 134 / 66%);
+    box-shadow: 0 5px 8px 0 rgb(136 134 134 / 66%);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#btn-ver-artigos:hover{
+    width: 355px;
+    box-shadow: 0 10px 16px 0 rgb(136 134 134 / 66%);
+    border-color: rgba(112, 112, 112, 0.63);
+    transition: 0.5s;
+}
+
+.ver-artigos-container{
+    margin-left: -120px;
+}
+
+@media (min-width:320px) and (max-width: 1000px){
+    .ver-artigos-container{
+         margin-left: 0px;
+    }
+    #btn-ver-artigos{
+        width: 340px;
+        height: 65px;
+        font-size: 29px;
+    }
+    #btn-ver-artigos:hover{
+        width: 375px;
+    }
+    h4{
+        font-size: 26px;
+    }
+}
+
+.ver-artigos-container .img-artigo{
+    width: 280px;
+    height: 168px;
+    border: 2px solid #fff;
+}
+
+.ver-artigos-container .img-artigo + h4{
+    margin-top: 0px;
+}
+
+.ver-artigos-titulo{
+    margin-top: 30px;
+    margin-top: 25px;
+    transform: scale(1.25);
+}
+
 
 /* Gabriel Tessarini */
