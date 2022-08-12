@@ -145,10 +145,6 @@ div[class*="col-"] {
     padding: 0 15px;
 }
 
-@media (min-width:320px) and (max-width: 1000px){
-    padding: 0 6px;    
-}    
-
 .col-2{
     margin: 0;
     width: 16.66%;
@@ -185,10 +181,12 @@ div[class*="col-"] {
     }
     div[class*="col-"] {
         width: 100% !important;
+        padding: 0 6px;
     }    
     div[class*="col-"]:not(:first-child) {
         margin-top: 20px;
     }
+    
 }
 
 @media (min-width:320px) and (max-width: 1000px){
