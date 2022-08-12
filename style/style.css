@@ -32,7 +32,7 @@ section{
 
 p, a, img{
     font-size: 18px;
-    line-height: 28px;
+    line-height: 29px;
     letter-spacing: normal;
     word-wrap: break-word;
     margin: 20px 0;       
@@ -268,11 +268,8 @@ footer{
     img.livro{
         height: 300px;
     }
-    .section-portfolio#sobre p{
-          margin: 26px 0;  
-    }
-    .section-menu p{
-        margin: 30px 0;  
+    .section-portfolio#sobre p, .section-menu p{
+          margin: 30px 0;  
     }
     p{
         font-size: 27px;
