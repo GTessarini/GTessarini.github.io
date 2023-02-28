@@ -3,4 +3,4 @@
 
 ## Gabriel Tessarini
 
-Portfólio do escritor, desenvolvedor, colunista e aprendedor, Gabriel Tessarini.
+Portfólio do Escritor, professor, palestrante e futurista polímata, Gabriel Tessarini.
