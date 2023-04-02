@@ -232,6 +232,18 @@ a.card-link{
     transform:scale(1.05);
 }
 
+.card.card-without-click{
+    cursor: auto;
+    padding: 15px 15px 15px 15px;
+}
+
+@media (min-width:320px) and (max-width: 1000px){
+    .socialSlides .card.card-without-click{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
 img.livro{
     height: 200px;
 }
@@ -293,6 +305,35 @@ a:link, a:visited, a:focus, a:active{
     color: #00A0C6;
 }
 
+.section-social{
+    min-height: 50vh !important;
+}
+
+.social-name, .social-content-about, .social-feedback{
+    text-align: left;
+}
+
+.social-name{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 0;
+    
+}
+.social-content-about{
+    color: #514f4f;    
+    font-size: 16px;
+    margin-top: 0;
+}
+.social-feedback{
+    font-size: 17px;
+    margin-bottom: 0;
+}
+img.social-stars{
+    width: 100px;
+    height: 20px;
+    margin-left: 50%
+}
+
 a img.livro:hover{
     -webkit-transform:scale(1.05);
     -moz-transform:scale(1.05);
@@ -325,9 +366,21 @@ h1{
     font-size: 50px;
 }
 
+h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
 @media (min-width:320px) and (max-width: 1000px){
     .section-portfolio h1{
         font-size: 75px;
+    }
+    .section-portfolio h2{
+        font-size: 60px;
+
     }
 }
 
@@ -440,6 +493,116 @@ h1{
     margin-top: 30px;
     margin-top: 25px;
     transform: scale(1.25);
+}
+
+/* Slide */
+
+/* * {box-sizing:border-box} */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.socialSlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #514f4f;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev{
+  margin-left: -50px;
+}
+@media (min-width:320px) and (max-width: 1000px){
+    .prev{
+        margin-left: -25px;
+        font-size: 28px;
+    }
+    .next{
+        font-size: 28px;
+        right: -25 !important;
+    }
+}
+.next {
+  right: -50;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+@media (min-width:320px) and (max-width: 1000px){
+    .dot{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 
