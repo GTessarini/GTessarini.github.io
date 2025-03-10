@@ -1,6 +1,15 @@
 
 $(document).ready(function(){
-    const cards = document.querySelectorAll(".card-link");    
+	
+	document.querySelectorAll('.menu-item').forEach(item => {
+		item.addEventListener('mouseover', () => {
+			item.style.fontWeight = 'bold';
+		});
+		item.addEventListener('mouseout', () => {
+			item.style.fontWeight = 'normal';
+		});
+	});	
+ /* const cards = document.querySelectorAll(".card-link");    
     cards.forEach(function(card){
        card.addEventListener("click", function(event){
             event.preventDefault();
@@ -11,7 +20,7 @@ $(document).ready(function(){
               window.location.hash = section;
             });            
         });
-    });
+    });	*/
     const btnsSinopse = document.querySelectorAll(".btn-ler-sinopse");
     btnsSinopse.forEach(function(btnSinopse){
         btnSinopse.addEventListener("click", function(event){
